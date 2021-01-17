@@ -2,30 +2,40 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Family ToDos</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="FamToDo.css">
-    </head>
-    <body>
-        <div class="container">
-            <h1>Family ToDo List</h1>
-            <input type="text" class="add" placeholder="Add New ToDo">
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Family ToDos</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="FamToDo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body class="container">
+    <div class="main">
+        <h1 class="headline">Family To-Do List</h1>
+        <form>
+            <input type="text" class="add" placeholder="Add New To-Do">
+            <button type="submit"><i class="far fa-plus-square"></i></button>
+        </form>
+        <div class="todoList">
             <ul>
-                <li <span>X</span> Find a camping location</li>
-                <li <span>X</span> Make a reservation</li>
-                <li <span>X</span> Make a list of things to pack</li>
-                <li <span>X</span> Go shopping</li>
+
             </ul>
+            <a class="clearAll" id="clearAll">Clear All</a>
         </div>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        
-        <script src="FamToDo.js" async defer></script>
-    </body>
+    </div>
+
+    <script type="text/javascript" src="FamToDo.js"></script>
+
+</body>
+
 </html>

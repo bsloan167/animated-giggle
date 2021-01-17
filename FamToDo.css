@@ -1,36 +1,115 @@
 body {
-    background: #00d2ff;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background: #00d2ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 h1 {
     font-weight: 300px;
-    color: white;
+    color: rgb(32, 238, 238);
     margin: 3px;
     text-align: center;
 }
 
 .container {
-    margin: 100px auto;
-    width: 300px;
-    color: white;
-    border: 2px solid white;
-    padding: 0 10px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    font-family: 'Raleway', sans-serif;
 }
 
-.add {
-    opacity: .8;
+.main {
+    padding: 20px;
+}
+
+form {
+    background-color: #046a8a;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+}
+
+input[type="text"] {
+    height: 30px;
+    outline: 0;
     border: none;
-    padding: 5px;
-    box-sizing: 100%;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    color: #20b2f5;
+    flex-grow: 1;
+    background-color: #046a8a;
+}
+
+input[type="text":placeholder] {
+    color: #20b2f5;
+}
+
+button {
+    font-size: 1.5rem;
+    background-color: #046a8a;
+    outline: 0;
+    border: none;
+    color: #20b2f5;
+}
+
+button:hover {
+    color: lightcoral;
+}
+
+.todoList {
+    background-color: #046a8a;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    height: 100%;
+    overflow-y: auto;
 }
 
 ul {
+    padding-left: 0px;
     list-style: none;
 }
 
-span {
-    
+li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 15px 0;
+    font-size: 1rem;
+    color: #20b2f5;
+}
+
+i {
+    pointer-events: none;
+}
+
+.todo-item {
+    flex-grow: 1;
+}
+
+.clearAll {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 3px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: #20b2f5;
+}
+
+.clearAll:hover {
+    color: lightcoral;
+}
+
+.todo-list-item {
+    transition: all 0.3s ease-out;
+}
+
+.todo-list-item-fall {
+    transform: translateY(12rem) rotateZ(10deg);
+    opacity: 0;
 }
