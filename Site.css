@@ -1,0 +1,87 @@
+body {
+    height: auto;
+    width: auto;
+    background: linear-gradient(to top right, rgba(24, 89, 127, 1), rgb(92, 189, 245));
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.comment {
+    height: 2em;
+    width: 25em;
+    background-color: rgb(250, 206, 206);
+}
+
+button {
+    height: 2em;
+    color: rgb(2, 163, 163);
+    background-color: rgb(2, 37, 58);
+}
+
+.quote {
+    width: fit-content;
+    color: rgb(240, 128, 240);
+    font-weight: 100;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+.quote:hover {
+    color: rgb(201, 150, 248);
+    font-weight: 300;
+}
+
+.li {
+    width: fit-content;
+    color: burlywood;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.li:hover {
+    color: azure;
+}
+
+h1 {
+    width: fit-content;
+    color: rgb(230, 179, 179);
+}
+
+h1:hover {
+    text-decoration: underline;
+}
+
+h2 {
+    width: fit-content;
+}
+
+h2:hover {
+    color: rgb(230, 179, 179)
+}
+
+h3 {
+    width: fit-content;
+    color: rgb(247, 154, 154);
+}
+
+h3:hover {
+    color: rgb(236, 161, 236);
+}
+
+.here {
+    color: rgb(167, 236, 248);
+    font-size: 2rem;
+}
+
+.here:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.click {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+.addNew-item {
+    flex-grow: 1;
+}
